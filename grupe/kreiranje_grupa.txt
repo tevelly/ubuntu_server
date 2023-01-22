@@ -1,1 +1,45 @@
+Upravljanje korisnicima i grupama
+
+/etc/group
+root:x:0:
+korisnici:x:1001:ivan,josipa
+Format /etc/group datoteke:
+ime_grupe:password:GID:account1,accountN
+
+root grupa nema listu korisnika
+
+Dodavanje grupe
+groupadd [ options ] group_name
+# groupadd posluzitelj
+# tail -1 /etc/group posluzitelj:x:1003:
+# groupadd -g 2500 baza 
+# tail -1 /etc/group baza:x:2500:
+
+Brisanje grupe
+groupdel group_name
+# groupdel posluzitelj
+
+Mijenjanje svojstva postojeće grupe
+groupmod [options] group_name
+- g GID 		Promjena ID u GID. 
+- n MAJSTORI 	Promjena imena grupe u MAJSTORI.
+
+Izlistavanje postojećih grupa
+tail /etc/group
+Izlistavanje postojećih korisnika s priradajućim grupama
+groups ime_korisnika
+
+
+
+
+
+Primjer_______________
+Kreiranje tri grupe:
+o	elektro
+o	programeri
+o	sistemci
+Kreirati korisničke račune:
+o	Svi korisnici će imati zadanu grupu elektro
+o	Neki od njih će biti u grupi programeri
+o	Neki od njih će biti u grupi sistemci
 
