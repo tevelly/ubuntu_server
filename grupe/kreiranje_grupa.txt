@@ -45,14 +45,3 @@ Mijenjanje vlasništva file/folder
 chown -R root:sistemci file/folder
 Mijenjanje vlasništva file/folder grupe
 chgrp -R groupname file/folder
-
-Primjer_______________
-Kreiranje tri grupe:
-o	elektro
-o	programeri
-o	sistemci
-Kreirati korisničke račune:
-o	Svi korisnici će imati zadanu grupu elektro
-o	Neki od njih će biti u grupi programeri
-o	Neki od njih će biti u grupi sistemci
-
