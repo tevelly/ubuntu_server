@@ -1,6 +1,11 @@
-Upravljanje korisnicima i grupama
+Brisanje korisnika :
+#sudo userdel username
+Brisanje korisničkog direktorija :
+#sudo rm -r /home/username ili
+#sudo deluser --remove-home user
 
-/etc/group
+Upravljanje korisnicima i grupama
+U /etc/group se nalaze sve grupe
 root:x:0:
 korisnici:x:1001:ivan,josipa
 Format /etc/group datoteke:
@@ -14,24 +19,32 @@ groupadd [ options ] group_name
 # tail -1 /etc/group posluzitelj:x:1003:
 # groupadd -g 2500 baza 
 # tail -1 /etc/group baza:x:2500:
-
 Brisanje grupe
 groupdel group_name
 # groupdel posluzitelj
 
-Mijenjanje svojstva postojeće grupe
-groupmod [options] group_name
-- g GID 		Promjena ID u GID. 
+Dodavanje postojećih korisnika u grupu
+#sudo usermod -a -G group username
+Brisanje postojećih korisnika iz grupe
+#sudo deluser username groupname
+Preimenovanje postojeće grupe
+groupmod -n novoImeGrupe staroImeGrupe
 - n MAJSTORI 	Promjena imena grupe u MAJSTORI.
 
 Izlistavanje postojećih grupa
-tail /etc/group
+more /etc/group
 Izlistavanje postojećih korisnika s priradajućim grupama
 groups ime_korisnika
 
+Dozvole
+vlasnik:grupa:ostali
+Mijenjanje prava pristupa
+chmod -R 777 file/folder
 
-
-
+Mijenjanje vlasništva file/folder
+chown -R root:sistemci file/folder
+Mijenjanje vlasništva file/folder grupe
+chgrp -R groupname file/folder
 
 Primjer_______________
 Kreiranje tri grupe:
