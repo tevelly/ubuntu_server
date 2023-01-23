@@ -1,5 +1,9 @@
+Dodavanje korisnika
+# useradd –c "Testni user" –m –s /bin/bash –g grupa –G dodGrupa iperic
+-c komentar, -m kreiranje home direktorija, -s putanja do korisnikovog shell-a
+-g dodavanje u primarnu (default) grupu, -G dodatne grupe
 Brisanje korisnika :
-#sudo userdel username
+#sudo userdel –r username //briše korisnika i home dir
 Brisanje korisničkog direktorija :
 #sudo rm -r /home/username ili
 #sudo deluser --remove-home user
@@ -21,7 +25,7 @@ groupadd [ options ] group_name
 # tail -1 /etc/group baza:x:2500:
 Brisanje grupe
 groupdel group_name
-# groupdel posluzitelj
+# groupdel posluzitelj (obratiti pozornost na primarnu grupu)
 
 Dodavanje postojećih korisnika u grupu
 #sudo usermod -a -G group username
@@ -29,7 +33,7 @@ Brisanje postojećih korisnika iz grupe
 #sudo deluser username groupname
 Preimenovanje postojeće grupe
 groupmod -n novoImeGrupe staroImeGrupe
-- n MAJSTORI 	Promjena imena grupe u MAJSTORI.
+- n MAJSTORI 	Promjena imena grupe
 
 Izlistavanje postojećih grupa
 more /etc/group
