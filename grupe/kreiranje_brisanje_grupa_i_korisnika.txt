@@ -1,6 +1,10 @@
-Upravljanje korisnicima i grupama
+Upravljanje grupama
 ---------------------------------
-U /etc/group se nalaze sve grupe
+
+Mjesto gdje se nalaze sve grupe
+/etc/group
+
+Primjer:
 root:x:0:
 korisnici:x:1001:ivan,josipa
 
@@ -12,12 +16,13 @@ _________ ________ ___ _________________
 1* -> Ime grupe koje ste samostalno odredili
 2* -> lozinka
 3* -> ID grupe
-4* -> kojim korisnicima grupa pripada
+4* -> koji su korisnici u grupama
 
 Zapamtiti -> root grupa nema listu korisnika
 
+
 Dodavanje grupe
-__________________________________________
+_______________________________________________________
 groupadd [ options ] group_name
 # groupadd posluzitelj
   ________ ___________
@@ -25,11 +30,29 @@ groupadd [ options ] group_name
  
 1* -> naredba za dodavanje grupe
 2* -> proizvoljno zadavanje imena grupe
+_______________________________________________________
+
+
+Dodavanje grupe sa ID-jem 
+# groupadd -g 2500 baza 
+  ________ _______ ____
+     1*       2*    3*
+      
+1* groupadd -> naredba za dodavanje grupe
+2* -g 2500 -> omogućava dodavanje ID-ja grupe koji je 2500
+3* baza -> proizvoljno ime grupe
+_______________________________________________________
 
 
 Izlistavanje zadnje dodane grupe
-_____________________________
-# tail -1 /etc/group 
+_______________________________________________________
+# tail -1 /etc/group
+ _____ __ __________
+  1*   2*      3*
+
+1* tail -> naredba za prikaz podataka od kraja datoteke
+2* -1 -> koliko redova će biti prikazano
+3* /etc/group -> datoteka što će biti izlistana
 
   posluzitelj:x:1003:
   ___________ _ ____
@@ -38,17 +61,14 @@ _____________________________
 1* -> Ime grupe
 2* -> lozinka
 3* -> ID grupe
+_______________________________________________________
 
-  
-# groupadd -g 2500 baza 
 
-# tail -1 /etc/group baza:x:2500:
-
-__________________________________________
 Brisanje grupe
+_______________________________________________________
 groupdel group_name
 # groupdel posluzitelj (obratiti pozornost na primarnu grupu)
-
+_______________________________________________________
 Dodavanje postojećih korisnika u grupu
 #sudo usermod -a -G group username
 Brisanje postojećih korisnika iz grupe
