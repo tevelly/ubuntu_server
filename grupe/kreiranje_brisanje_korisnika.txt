@@ -1,0 +1,20 @@
+Dodavanje korisnika
+# useradd –c "Testni user" –m –s /bin/bash –g korisnici –G sistemci,Wordpress iperic
+  ______  ________________ __ ____________ ____________ _____________________ ______
+    1*          2*          3*    4*          5*                    6*          7*
+ 
+1* useradd - naredba za dodavanje korisnika
+2* -c - dodaje komentar -> Testni user
+3* -m - kreiranje home direktorija korisniku
+4* –s /bin/bash - putanja do dodijeljenog korisnikovog shell-a
+5* -g korisnici - dodavanje korisnika u primarnu (default) grupu imena korisnici
+6* –G sistemci,Wordpress - dodatne grupe (ukoliko ih ima, odvajaju se zarezom)
+7* iperic - korisničko ime
+______________________________________________________________________________
+
+Brisanje korisnika :
+#sudo userdel –r username //briše korisnika i home dir
+
+Brisanje korisničkog direktorija :
+#sudo rm -r /home/username ili
+#sudo deluser --remove-home user
