@@ -44,6 +44,69 @@ Dodavanje grupe sa ID-jem
 4* baza -> proizvoljno ime grupe
 _______________________________________________________
 
+Brisanje grupe
+_______________________________________________________
+groupdel group_name
+# groupdel posluzitelj (obratiti pozornost na primarnu grupu)
+_______________________________________________________
+
+
+_______________________________________________________
+
+Dodavanje postojećih korisnika u grupu
+# usermod -a -G group username
+  _______ __ __ _____ ________ 
+     1*   2* 3*   4*     5*
+      
+1* usermod -> naredba za ažuriranje dijelova korisničkog računa
+2* -a -> dodavanje korisnika u sporednu grupu
+3* -G -> lista grupe (grupa)
+4* group -> ime grupe ili grupa (odvojene zarezom)
+5* username -> kojeg korisnika dodajemo grupi
+_______________________________________________________
+
+
+_______________________________________________________
+
+Brisanje postojećih korisnika iz grupe
+# deluser username groupname
+  _______ ________ _________ 
+     1*       2*      3*
+      
+1* deluser -> naredba za brisanje korisnika
+2* username -> koji će korisnik biti izbrisan iz grupe
+3* groupname -> iz koje grupe će korisnik biti izbrisan
+_______________________________________________________
+
+
+_______________________________________________________
+
+Preimenovanje postojeće grupe
+#groupmod -n novoImeGrupe staroImeGrupe
+  _______ __ ____________ _____________ 
+     1*   2*      3*          4*
+      
+1* groupmod -> naredba ažuriranje definiciju određene grupe
+2*  -n -> preimenovanje grupe
+3* novoImeGrupe -> postojeće ime grupe, koja će biti zamjenjena
+4* staroImeGrupe -> novo ime grupe, koja će biti dodijeljena
+_______________________________________________________
+
+
+_______________________________________________________
+
+Izlistavanje postojećih grupa
+_______________________________________________________
+# more /etc/group
+ _____ __________
+  1*        2*
+
+1* more -> naredba izslistavanje teksta kroz ekrane
+2* /etc/group -> datoteka što će biti izlistana
+_______________________________________________________
+
+
+_______________________________________________________
 
 Izlistavanje zadnje dodane grupe
 _______________________________________________________
@@ -64,57 +127,11 @@ _______________________________________________________
 3* -> ID grupe
 _______________________________________________________
 
-
-Brisanje grupe
-_______________________________________________________
-groupdel group_name
-# groupdel posluzitelj (obratiti pozornost na primarnu grupu)
-_______________________________________________________
-
-
-_______________________________________________________
-Dodavanje postojećih korisnika u grupu
-# usermod -a -G group username
-  _______ __ __ _____ ________ 
-     1*   2* 3*   4*     5*
-      
-1* usermod -> naredba za ažuriranje dijelova korisničkog računa
-2* -a -> dodavanje korisnika u sporednu grupu
-3* -G -> lista grupe (grupa)
-4* group -> ime grupe ili grupa (odvojene zarezom)
-5* username -> kojeg korisnika dodajemo grupi
-_______________________________________________________
-
-
-_______________________________________________________
-Brisanje postojećih korisnika iz grupe
-# deluser username groupname
-  _______ ________ _________ 
-     1*       2*      3*
-      
-1* deluser -> naredba za brisanje korisnika
-2* username -> koji će korisnik biti izbrisan iz grupe
-3* groupname -> iz koje grupe će korisnik biti izbrisan
-_______________________________________________________
-
-
-_______________________________________________________
-
-Preimenovanje postojeće grupe
-#groupmod -n novoImeGrupe staroImeGrupe
-- n MAJSTORI Promjena imena grupe
-
-Izlistavanje postojećih grupa
-more /etc/group
 Izlistavanje postojećih korisnika s priradajućim grupama
-groups ime_korisnika
+# groups ime_korisnika
+  ______ _____________
+    1*       2*
 
-Dozvole
-vlasnik:grupa:ostali
-Mijenjanje prava pristupa
-chmod -R 777 file/folder
-
-Mijenjanje vlasništva file/folder
-chown -R root:sistemci file/folder
-Mijenjanje vlasništva file/folder grupe
-chgrp -R groupname file/folder
+1* groups -> naredba izlistavanje članstva za svako korisničko ime 
+2* ime_korisnika -> za kojeg korisnika će biti izlistan
+_______________________________________________________
