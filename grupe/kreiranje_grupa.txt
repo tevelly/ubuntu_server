@@ -2,8 +2,10 @@ Dodavanje korisnika
 # useradd –c "Testni user" –m –s /bin/bash –g grupa –G dodGrupa iperic
 -c komentar, -m kreiranje home direktorija, -s putanja do korisnikovog shell-a
 -g dodavanje u primarnu (default) grupu, -G dodatne grupe
+
 Brisanje korisnika :
 #sudo userdel –r username //briše korisnika i home dir
+
 Brisanje korisničkog direktorija :
 #sudo rm -r /home/username ili
 #sudo deluser --remove-home user
@@ -12,17 +14,24 @@ Upravljanje korisnicima i grupama
 U /etc/group se nalaze sve grupe
 root:x:0:
 korisnici:x:1001:ivan,josipa
+
 Format /etc/group datoteke:
 ime_grupe:password:GID:account1,accountN
+   1*          2*   3*    4*      5*
+
+1* Ime grupe koje ste samostalno odredili
 
 root grupa nema listu korisnika
 
+__________________________________________
 Dodavanje grupe
 groupadd [ options ] group_name
 # groupadd posluzitelj
 # tail -1 /etc/group posluzitelj:x:1003:
 # groupadd -g 2500 baza 
 # tail -1 /etc/group baza:x:2500:
+
+__________________________________________
 Brisanje grupe
 groupdel group_name
 # groupdel posluzitelj (obratiti pozornost na primarnu grupu)
