@@ -35,12 +35,13 @@ _______________________________________________________
 
 Dodavanje grupe sa ID-jem 
 # groupadd -g 2500 baza 
-  ________ _______ ____
-     1*       2*    3*
+  ________ __ ____ ____
+     1*    2*  3*   4*
       
 1* groupadd -> naredba za dodavanje grupe
-2* -g 2500 -> omogućava dodavanje ID-ja grupe koji je 2500
-3* baza -> proizvoljno ime grupe
+2* -g -> omogućava dodavanje proizvoljnog ID-ja
+3* 2500 -> proizvoljan ID grupe koji korisnik zadaje
+4* baza -> proizvoljno ime grupe
 _______________________________________________________
 
 
