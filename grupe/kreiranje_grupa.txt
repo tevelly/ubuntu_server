@@ -1,4 +1,4 @@
-<h1>Dodavanje korisnika</h1>
+Dodavanje korisnika
 # useradd –c "Testni user" –m –s /bin/bash –g grupa –G dodGrupa iperic
 -c komentar, -m kreiranje home direktorija, -s putanja do korisnikovog shell-a
 -g dodavanje u primarnu (default) grupu, -G dodatne grupe
