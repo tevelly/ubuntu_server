@@ -70,13 +70,39 @@ _______________________________________________________
 groupdel group_name
 # groupdel posluzitelj (obratiti pozornost na primarnu grupu)
 _______________________________________________________
+
+
+_______________________________________________________
 Dodavanje postojećih korisnika u grupu
-#sudo usermod -a -G group username
+# usermod -a -G group username
+  _______ __ __ _____ ________ 
+     1*   2* 3*   4*     5*
+      
+1* usermod -> naredba za ažuriranje dijelova korisničkog računa
+2* -a -> dodavanje korisnika u sporednu grupu
+3* -G -> lista grupe (grupa)
+4* group -> ime grupe ili grupa (odvojene zarezom)
+5* username -> kojeg korisnika dodajemo grupi
+_______________________________________________________
+
+
+_______________________________________________________
 Brisanje postojećih korisnika iz grupe
-#sudo deluser username groupname
+# deluser username groupname
+  _______ ________ _________ 
+     1*       2*      3*
+      
+1* deluser -> naredba za brisanje korisnika
+2* username -> koji će korisnik biti izbrisan iz grupe
+3* groupname -> iz koje grupe će korisnik biti izbrisan
+_______________________________________________________
+
+
+_______________________________________________________
+
 Preimenovanje postojeće grupe
-groupmod -n novoImeGrupe staroImeGrupe
-- n MAJSTORI 	Promjena imena grupe
+#groupmod -n novoImeGrupe staroImeGrupe
+- n MAJSTORI Promjena imena grupe
 
 Izlistavanje postojećih grupa
 more /etc/group
