@@ -16,7 +16,7 @@ Zamjenski znakovi mogu se koristiti s većinom naredbi
 -	…….
 
 ## 3. Različite vrste zamjenskih znakova.
-* - odgovara nula ili više znakova.
+* odgovara nula ili više znakova.
     -	*.txt
     -	a*
     -	a*.txt
