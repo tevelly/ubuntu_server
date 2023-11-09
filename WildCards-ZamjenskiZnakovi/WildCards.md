@@ -8,14 +8,14 @@
 Znak ili niz znakova koji se koristi za uzorak podudaranje.
 Proširuje uzorak zamjenskog znaka u popis datoteka i/ili direktorija.
 
-2. Kada i gdje se mogu koristiti.
+## 2. Kada i gdje se mogu koristiti.
 Zamjenski znakovi mogu se koristiti s većinom naredbi
 -	ls
 -	rm
 -	cp
 -	…….
 
-3. Različite vrste zamjenskih znakova.
+## 3. Različite vrste zamjenskih znakova.
 * - odgovara nula ili više znakova.
     -	*.txt
     -	a*
