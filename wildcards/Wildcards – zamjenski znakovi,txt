@@ -36,21 +36,21 @@ Zamjenski znakovi mogu se koristiti s većinom naredbi
         -	Baseball
         -	cricet
 Koristite dva znaka odvojena crticom za stvaranje raspona u klasi znakova.
--	[a-g]*
+- [a-g]*
   -	Podudara se sa svim datotekama koje počinju s a, b, c, d, e, f ili g.
-  -	[3-6]*
-o	Odgovara svim datotekama koje počinju s 3, 4, 5 ili 6.
+- [3-6]*
+  - Odgovara svim datotekama koje počinju s 3, 4, 5 ili 6.
 Unaprijed definirane klase:
--	[[:alpha:]] – slova, mala i velika
--	[[:alnum:]] - alfanumerički znakovi, mala i velika slova
--	[[:digit:]] – brojevi (i decimalni) od 0 do 9
--	[[:lower:]] – mala slova
--	[[:space:]] – razmak, tab, novi red …..
--	[[:upper:]] – velika slova
+- [[:alpha:]] – slova, mala i velika
+- [[:alnum:]] - alfanumerički znakovi, mala i velika slova
+- [[:digit:]] – brojevi (i decimalni) od 0 do 9
+- [[:lower:]] – mala slova
+- [[:space:]] – razmak, tab, novi red …..
+- [[:upper:]] – velika slova
 
 Što ako želimo „pogoditi“ zamjenski znak?
 Onda biste trebali „izbjeći“ taj znak s '\' prije tog znaka.
 Preporuka: “Ako želiš sebi olakšati život, ne nazivajte svoje datoteke s upitnicima i zvjezdicama!“
 Ukoliko hoćemo „pogoditi“ sve datoteke koje završavaju s upitnikom:
--	*\?
-o	done?
+- *\?
+  - done?
