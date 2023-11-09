@@ -37,9 +37,9 @@ Zamjenski znakovi mogu se koristiti s većinom naredbi
         -	cricet
 Koristite dva znaka odvojena crticom za stvaranje raspona u klasi znakova.
 - [a-g]*
-  -	Podudara se sa svim datotekama koje počinju s a, b, c, d, e, f ili g.
+   - Podudara se sa svim datotekama koje počinju s a, b, c, d, e, f ili g.
 - [3-6]*
-  - Odgovara svim datotekama koje počinju s 3, 4, 5 ili 6.
+   - Odgovara svim datotekama koje počinju s 3, 4, 5 ili 6.
 Unaprijed definirane klase:
 - [[:alpha:]] – slova, mala i velika
 - [[:alnum:]] - alfanumerički znakovi, mala i velika slova
