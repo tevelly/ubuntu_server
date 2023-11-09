@@ -4,7 +4,7 @@
 3. Različite vrste zamjenskih znakova.
 4. Kako koristiti zamjenske znakove s raznim naredbama.
 
-1. Što su zamjenski znakovi.
+## 1. Što su zamjenski znakovi.
 Znak ili niz znakova koji se koristi za uzorak podudaranje.
 Proširuje uzorak zamjenskog znaka u popis datoteka i/ili direktorija.
 
