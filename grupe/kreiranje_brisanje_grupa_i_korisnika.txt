@@ -1,4 +1,4 @@
-Upravljanje grupama
+#Upravljanje grupama
 ---------------------------------
 
 Mjesto gdje se nalaze sve grupe
@@ -21,7 +21,7 @@ _________ ________ ___ _________________
 Zapamtiti -> root grupa nema listu korisnika
 
 
-Dodavanje grupe
+##Dodavanje grupe
 _______________________________________________________
 groupadd [ options ] group_name
 # groupadd posluzitelj
@@ -33,7 +33,7 @@ groupadd [ options ] group_name
 _______________________________________________________
 
 
-Dodavanje grupe sa ID-jem 
+##Dodavanje grupe sa ID-jem 
 # groupadd -g 2500 baza 
   ________ __ ____ ____
      1*    2*  3*   4*
@@ -53,7 +53,7 @@ _______________________________________________________
 
 _______________________________________________________
 
-Dodavanje postojećih korisnika u grupu
+##Dodavanje postojećih korisnika u grupu
 # usermod -a -G group username
   _______ __ __ _____ ________ 
      1*   2* 3*   4*     5*
@@ -68,7 +68,7 @@ _______________________________________________________
 
 _______________________________________________________
 
-Brisanje postojećih korisnika iz grupe
+##Brisanje postojećih korisnika iz grupe
 # deluser username groupname
   _______ ________ _________ 
      1*       2*      3*
@@ -95,7 +95,7 @@ _______________________________________________________
 
 _______________________________________________________
 
-Izlistavanje postojećih grupa
+##Izlistavanje postojećih grupa
 _______________________________________________________
 # more /etc/group
  _____ __________
@@ -108,7 +108,7 @@ _______________________________________________________
 
 _______________________________________________________
 
-Izlistavanje zadnje dodane grupe
+##Izlistavanje zadnje dodane grupe
 _______________________________________________________
 # tail -1 /etc/group
  _____ __ __________
@@ -127,7 +127,7 @@ _______________________________________________________
 3* -> ID grupe
 _______________________________________________________
 
-Izlistavanje postojećih korisnika s priradajućim grupama
+##Izlistavanje postojećih korisnika s priradajućim grupama
 # groups ime_korisnika
   ______ _____________
     1*       2*
@@ -135,3 +135,6 @@ Izlistavanje postojećih korisnika s priradajućim grupama
 1* groups -> naredba izlistavanje članstva za svako korisničko ime 
 2* ime_korisnika -> za kojeg korisnika će biti izlistan
 _______________________________________________________
+
+##Promjena grupe
+
