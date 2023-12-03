@@ -142,7 +142,7 @@ _____  ________ ____
  1*         2*    3*
 
 1* chown -> naredba za promjenu vlasništva
-2* :NewGroup -> grupu koju želite dodati
+2* :NewGroup -> dodavanje grupe
 3* FILE -> datoteku ili direktorij kojoj mijenjate prava vlasništva
 ________________________________________________________
 
@@ -153,5 +153,5 @@ _____ _______ ________ ____
 
 1* chown -> naredba za promjenu vlasništva
 2* NewUser -> dodavanje novog vlasnika
-3* :NewGroup -> grupu koju želite dodati
+3* :NewGroup -> dodavanje grupe
 4* FILE -> datoteku ili direktorij kojoj mijenjate prava vlasništva
