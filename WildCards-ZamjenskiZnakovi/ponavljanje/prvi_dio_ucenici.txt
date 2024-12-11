@@ -1,0 +1,66 @@
+Zadaci za rad
+
+Otvoriti datoteku iz LanSchool-a koji ste dobili, imena kreiranje_dir_dat.txt
+Sadržaj datoteke kreiranje_dir_dat.txt kopirati u kreiranje_dir_dat.sh unutar vašeg home direktorija
+Snimiti i izaći iz nano editora.
+Promijeniti prava pristupa na datoteku kreiranje_dir_dat.sh da budu:
+- rwx r-x r-- (754)
+Pokrenuti datoteku kreiranje_dir_dat.sh sa sljedećom naredbom: ./kreiranje_dir_dat.sh
+
+
+1. Pronađite sve datoteke koje počinju sa slovom “e” i bilo kojeg su nastavka (ekstenzije)
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+2. Pronađite sve datoteke koje završavaju sa slovom “t” i bilo kojeg su nastavka (ekstenzije)
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+3. Pronađite sve datoteke koje imaju slovo “x” bilo gdje i bilo kojeg su nastavka (ekstenzije)
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+4. Pronađite sve datoteke koje imaju dva slovo i bilo kojeg su nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+5. Pronađite sve datoteke koje imaju prvo slovo “M” i treće slovo “n” i bilo kojeg su nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+6. Pronađite sve datoteke koje imaju pet znakova i bilo kojeg su nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+
+7. Pronađite sve datoteke koje imaju šest znakova i bilo kojeg su nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+8. Pronađite sve datoteke koje imaju u nazivu “log”  a na zadnjem mjestu broj od 1 do tri, te su bilo kojeg nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+9. Pronađite sve datoteke koje imaju u nazivu bilo koje slovo ili broj, na zadnjem mjestu broj, te su bilo kojeg nastavka (ekstenzije).
+
+Rješenje naredbe:
+Rješenje izlistanja:
+
+
+

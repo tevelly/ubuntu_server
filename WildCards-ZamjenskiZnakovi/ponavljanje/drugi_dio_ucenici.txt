@@ -1,0 +1,35 @@
+Zadaci za rad
+
+1. Napraviti u direktoriju testiranje direktorij dokumenti. 
+   Pronaći i premjestiti sve datoteke tipa .docx u direktorij naziva dokumenti.
+
+Rješenje naredbi:
+
+
+Kada ste napravili 1. zadatak podizanjem ruku signalizirajte da ste završili.
+Pričekati ostale kolege da završe.
+Ne raditi druge zadatke bez daljnje upute nastavnika.
+
+2. Napraviti u direktoriju testiranje direktorij slike.
+   Premjestiti sve datoteke tipa .jpg u direktorij naziva slike.
+
+
+3. Napraviti u direktoriju testiranje direktorij slikePng.
+   Premjestiti sve datoteke tipa .png u direktorij naziva slikePng.
+
+Rješenje naredbe:
+
+4. Napraviti u direktoriju testiranje direktorij tekst.
+   Premjestiti sve datoteke tipa .txt u direktorij naziva tekst.
+
+Rješenje naredbe:
+
+5. Napraviti u direktoriju testiranje direktorij bash.
+   Premjestiti sve datoteke tipa .bash u direktorij naziva bash.
+
+Rješenje naredbe:
+
+6. Napraviti u direktoriju testiranje direktorij skripte.
+   Kopirati sve datoteke tipa .sh u direktorij naziva skripte.
+
+Rješenje naredbe:

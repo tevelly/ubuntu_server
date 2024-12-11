@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Kreiranje direktorija
+mkdir -p ~/testiranje
+mkdir -p ~/testiranje/desk
+mkdir -p ~/testiranje/loads
+mkdir -p ~/testiranje/trenutni
+mkdir -p ~/testiranje/desk/myfolder
+
+
+# Kreiranje datoteka
+touch ~/testiranje/loads/mydocUment.docx
+touch ~/testiranje/loads/image1.jpg
+touch ~/testiranje/loads/log.txt
+touch ~/testiranje/loads/oldfile.txt
+touch ~/testiranje/loads/example.txt
+touch ~/testiranje/loads/script.sh
+touch ~/testiranje/loads/script.bash
+touch ~/testiranje/loads/log6.bash
+
+touch ~/testiranje/desk/examplefile.txt
+touch ~/testiranje/desk/image3.jpg
+touch ~/testiranje/desk/log1.txt
+touch ~/testiranje/desk/oldfile1.txt
+touch ~/testiranje/desk/000000.txt
+touch ~/testiranje/desk/Man.txt
+touch ~/testiranje/desk/111111.txt
+touch ~/testiranje/desk/myfolder/examplefile1.txt
+touch ~/testiranje/desk/myfolder/log5.txt
+touch ~/testiranje/desk/image4.png
+touch ~/testiranje/desk/log2.txt
+touch ~/testiranje/desk/Men.txt
+touch ~/testiranje/desk/e3.txt
+touch ~/testiranje/desk/oldfile2.txt
+
+touch ~/testiranje/examplefile2.txt
+touch ~/testiranje/image5.jpg
+touch ~/testiranje/log3.txt
+touch ~/testiranje/oldfile3.txt
+touch ~/testiranje/ol.txt
+touch ~/testiranje/fa.txt
+touch ~/testiranje/image2.png
+touch ~/testiranje/123456.txt
+touch ~/testiranje/225588.txt
+
+
+touch ~/testiranje/trenutni/eXample.txt
+touch ~/testiranje/trenutni/image6.jpg
+touch ~/testiranje/trenutni/log4.txt
+touch ~/testiranje/trenutni/oldfile4.txt
+touch ~/testiranje/trenutni/script2.sh
+touch ~/testiranje/trenutni/script2.bash
+touch ~/testiranje/trenutni/mydocument.docx
+
